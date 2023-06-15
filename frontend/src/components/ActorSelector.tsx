@@ -1,21 +1,26 @@
+import ActorSelectorList from "./ActorSelectorList";
 import MovieSection from "./MovieSection";
 
 const ActorSelector = () => {
-    return <MovieSection title="Actors">
+    return (
+     <MovieSection title="Actors">
         <div className="flex h-96">
-           
-
-            <div className="m-2 w-1/2">
-                <div>
-                    <h2 className="text-center text-lg font-bod">Selected</h2>
-                </div>
-                <div>
+           <ActorSelectorList title="Available">
                 <select className="border border-green-500 w-full" size={15}>
-                        <option>Seected 1</option>
-                    </select>
-                </div>
-            </div>
+                    <option>Actor 1</option>
+                </select>
+           </ActorSelectorList>
+
+
+            <ActorSelectorList title="Selected">
+                <select className="border border-green-500 w-full" size={15}>
+                    <option>Seected 1</option>
+                </select>
+            </ActorSelectorList>
         </div>
         </MovieSection>
+    );
 };
+
+
 export default ActorSelector; 

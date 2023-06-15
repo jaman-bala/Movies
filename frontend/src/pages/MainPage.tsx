@@ -1,5 +1,5 @@
 import MovieList from "../components/MovieList";
-import MetadataEditor from "../components/MetaData";
+import MetadataEditor from "../components/MovieData";
 import ActorsSection from "../components/ActorSelector";
 import CategoriesSection from "../components/CategorySelector";
 
