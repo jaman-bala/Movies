@@ -19,3 +19,5 @@ export interface SetSelectedMovieIdAction {
     type: Actions.SetSelectedMovieId;
     payload: number | null;
 }
+
+export type ActionType = SetSelectedMovieIdAction;

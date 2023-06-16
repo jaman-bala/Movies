@@ -2,8 +2,11 @@ import MovieList from "../components/MovieList";
 import MetadataEditor from "../components/MovieData";
 import ActorsSection from "../components/ActorSelector";
 import CategoriesSection from "../components/CategorySelector";
+import { useContext } from "react";
+import StateContext from "../state/StateContext";
 
 const MainPage = () => {
+    const {state} = useContext(StateContext);
     return (
         <>
         <div className="md:flex">
